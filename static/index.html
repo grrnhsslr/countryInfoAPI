@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='./js/countryInfo.js' defer></script>
+    <title>Country Info Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS styles */
+        .jumbotron {
+        background-image: url('https://www.worldatlas.com/r/w960-q80/upload/b2/0c/ad/shutterstock-1471556480.jpg');
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+        }
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+        color: #333;
+        }
+        h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        }
+        p {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 20px;
+        }
+        .button {
+        display: block;
+        width: 200px;
+        margin: auto;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+        .button:hover {
+        background-color: #45a049;
+        }
+        .button1{
+        display: block;
+        width: 200px;
+        margin: auto;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+        #country-table{
+        margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="jumbotron">
+        <h1 class="display-4"><strong> Welcome to Country Info Website</strong></h1>
+        <p class="lead">Explore information about different countries</p>
+        <label for='countryInput'></label><input class="button1" name="city" placeholder="Country" id='countryInput'/>
+            <button id='countrySearch' class="button">Search</button>
+            <table class="table table-primary table-hover table-striped" id="country-table"></table>
+    </div>
+
+    
+
+     <!--Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
